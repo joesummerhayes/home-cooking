@@ -11,7 +11,6 @@ export class Recipes extends React.Component {
     render() {
         return (
             <>
-                <h1>hello from Recipes</h1>
                 <RecipeList recipes={recipeData} />
             </>
         )

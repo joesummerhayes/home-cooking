@@ -11,7 +11,7 @@ export class RecipeList extends React.Component {
 
         return (
             <>
-                <div className="container py-5">
+                <div className="container py-12">
                     <div className="row">
                         <div className="col-10 mx-auto col-md-6 text-center text-uppercase mb-3">
                             <h1>List of recipes</h1>
@@ -19,9 +19,10 @@ export class RecipeList extends React.Component {
                     </div>
                     <div className="row">
                         {recipes.map((item) => {
-                            console.log(item)
                             return (
-                                <Recipe recipe={item} />
+                                <div>
+                                    <Recipe recipe={item} key={item.recipe_id} />
+                                </div>
                             )
                         })}
                     </div>
