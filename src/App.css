@@ -1,12 +1,18 @@
-body {
-  }
-
 
 .header-hero {
     min-height: calc(100vh - 56px);
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./Images/burger.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./Images/pizza2.jpg') center/cover no-repeat;
     color: beige;
     font-family: "Raleway", "fantasy"!important;
     letter-spacing: 0.2em;
 }
 
+.canvas {
+  min-height: calc(120vh - 100px);
+  background: url('./Images/wood.png') center/cover no-repeat;
+}
+
+
+.joe-font {
+  font-family: "Raleway", "fantasy" !important;
+}

@@ -11,20 +11,22 @@ export class RecipeList extends React.Component {
 
         return (
             <>
-                <div className="container py-12">
-                    <div className="row">
-                        <div className="col-10 mx-auto col-md-6 text-center text-uppercase mb-3">
-                            <h1>List of recipes</h1>
+                <div className="canvas">
+                    <div className="container">
+                        <div className="row">
+                            <div className="mx-auto text-center text-capitalize mb-3" >
+                                <h1 className="joe-font" style={{color: "black", paddingTop: "2.5rem"}}>List of recipes</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div className="row">
-                        {recipes.map((item) => {
-                            return (
-                                <div>
-                                    <Recipe recipe={item} key={item.recipe_id} />
-                                </div>
-                            )
-                        })}
+                        <div className="row" >
+                            {recipes.map((item) => {
+                                return (
+                                    <div className="mx-auto">
+                                        <Recipe recipe={item} key={item.recipe_id} />
+                                    </div>
+                                )
+                            })}
+                        </div>
                     </div>
                 </div>
             </>

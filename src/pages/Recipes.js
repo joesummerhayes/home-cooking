@@ -4,9 +4,7 @@ import {recipeData} from '../data/tempList';
 
 export class Recipes extends React.Component {
 
-    state = {
-        recipes: []
-    }
+
 
     render() {
         return (
