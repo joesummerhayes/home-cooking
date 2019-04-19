@@ -14,7 +14,10 @@ export const recipeData = [
       "1/2 cup jack and cheddar cheese, shredded",
       "1 tablespoon tortilla chips, crumbled"
     ],
-    stars: ["1"]
+    stars: ["1"],
+    portions: "2",
+    time: "1.5 hours",
+    price: "£17.80"
   },
   {
     publisher: "The Pioneer Woman",
@@ -31,7 +34,10 @@ export const recipeData = [
       "1/2 cup jack and cheddar cheese, shredded",
       "1 tablespoon tortilla chips, crumbled",
     ],
-    stars: ["1", "1"]
+    stars: ["1", "1"],
+    portions: "2",
+    time: "30 mins",
+    price: "£12.80"
   },
   {
     publisher: "The Pioneer Woman",
@@ -48,6 +54,9 @@ export const recipeData = [
       "1/2 cup jack and cheddar cheese, shredded",
       "1 tablespoon tortilla chips, crumbled",
     ],
-    stars: ["1", "1", "1"]
+    stars: ["1", "1", "1"],
+    portions: "2",
+    time: "5 mins",
+    price: "£15"
   }
 ];

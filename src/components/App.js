@@ -14,8 +14,8 @@ class App extends React.Component {
     render() {
         return (
             <Router>
+                <Navbar sticky="top" />
                 <main>
-                    <Navbar />
                     <Switch>
                         <Route exact path="/" component={Homepage} />
                         <Route exact path="/recipes" component={Recipes} />

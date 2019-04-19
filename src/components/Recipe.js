@@ -8,8 +8,7 @@ export class Recipe extends React.Component {
 
 
     render() {
-        const {title, publisher, image_url, recipe_id, source_url, ingredients, stars} = this.props.recipe
-        console.log(image_url)
+        const {title, publisher, image_url, recipe_id, source_url, ingredients, stars, portions, time, price} = this.props.recipe
 
         return (
             <>
@@ -25,7 +24,8 @@ export class Recipe extends React.Component {
                             </div>
                         </div>
                         <Link
-                            className="ui button text-capitalize"
+                            className="ui button text-uppercase"
+                            style={{letterSpacing: "0.1rem", fontSize: "0.8rem"}}
                             to={{
                                 pathname: `recipes/:${recipe_id}`,
                                 state: {
@@ -35,7 +35,10 @@ export class Recipe extends React.Component {
                                     recipe_id,
                                     source_url,
                                     ingredients,
-                                    stars
+                                    stars,
+                                    portions,
+                                    time,
+                                    price
                                 }
                             }}
                         >
