@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
+import styes from '../data/tempList';
+
 
 
 export class Recipe extends React.Component {
@@ -11,6 +13,7 @@ export class Recipe extends React.Component {
 
     render() {
         const {title, publisher, image_url, recipe_id, source_url, ingredients, stars, portions, time, price} = this.props.recipe
+        console.log(image_url);
 
         return (
             <>

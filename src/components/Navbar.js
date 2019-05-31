@@ -1,5 +1,4 @@
 import React from 'react';
-import {FaBeer} from 'react-icons/fa';
 import logo from '../Images/TeaOakLogo.png';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
